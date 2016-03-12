@@ -12,7 +12,7 @@
 }
 
 .list-container {
-	background-color: #E2E4E6;
+	background-color: #AE45E2;
 	margin: 0px 10px;
 	padding: 0px 10px;
 	width: 300px;
@@ -89,7 +89,7 @@ a.add-list-link.clicked {
 
 a.add-card-link {
 	width: 100%;
-	color: rgba(150, 150, 150, 1);
+	color: rgba(245, 241, 6, 1);
 	text-decoration: none;
 	height: 30px;
 	display: block;
@@ -117,6 +117,7 @@ a.add-card-link.clicked {
 
 .new-card-form.clicked {
 	display: block;
+	background-color: rgba(218, 204, 232,1);
 }
 
 .new-card-button {
