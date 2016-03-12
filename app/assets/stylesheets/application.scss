@@ -1,0 +1,162 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+html, body {
+	height: 100%;
+	overflow-y: hidden;
+}
+
+body {
+	/*background: rgba(255, 230, 230, 1) !important;*/
+	background-color: #0079BF !important;
+}
+
+.splash-container {
+	/*background-image: url("/images/splash.jpeg");*/
+	background-size: cover;
+	height: 100%;
+	/*display: flex;*/
+	flex-direction: row;
+	justify-content: center;
+}
+
+.welcome {
+	font-family: Parkavenue, cursive;
+	display: block;
+	width: 600px;
+	margin: 0 auto;
+	padding-top: 200px;
+	text-align: center;
+	font-size: 40px;
+	color: white;
+	text-shadow: 2px 2px black;
+}
+
+.splash-content {
+	background: rgba(255, 255, 255, 0.4);
+	height: 275px;
+	padding: 10px 20px;
+	width: 300px;
+	margin: 0 auto;
+	margin-top: 200px;
+}
+
+.splash-title {
+	font-size: 24px;
+	text-align: center;
+	margin: 20px 0px;
+}
+
+#content {
+	height: 100%;
+	margin-top: 60px;
+	overflow-x: scroll;
+}
+
+.navbar-header {
+	padding: 9px 0px;
+}
+
+.navbar.navbar-default.navbar-solid {
+	/*background: rgba(255, 138, 138, 1);*/
+	background-color: #0067A3;
+	border: 1px rgba(255, 138, 138, 1);
+	border-radius: 0px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.navbar-left.brand-name {
+	height: 34px;
+	margin: 8px 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 24px;
+	color: white;
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	margin-left: -60px;
+}
+
+.btn.btn-default.board-button {
+	background: rgba(255, 255, 255, 0.3);
+	color: white;
+	font-weight: bold;
+	border: none;
+}
+
+.form-control.search-input {
+	background: rgba(255, 255, 255, 0.3);
+	border: none;
+}
+
+.form-control.search-input::-webkit-input-placeholder {
+	color: white;
+}
+
+.nav.navbar-nav.navbar-right {
+	background: rgba(255, 255, 255, 0.3); 
+}
+
+.dropdown-toggle {
+	color: white !important;
+}
+
+.authentication-input {
+	width: 260px;
+	margin-bottom: 10px;
+}
+
+.authentication-button {
+	margin: 10px 0px 0px 10px;
+	float: right;
+	background-color: #58A842;
+	border: none;
+	box-shadow: 2px 2px #4d4d4d;
+	color: white;
+	font-weight: bold;
+}
+
+.modal-container {
+
+  .modal-background {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+  }
+
+  .modal-content {
+    position: fixed !important;
+    z-index: 101;
+    top: 20%;
+    left: 30%;
+    right: 30%;
+    background: rgba(237, 239, 240, 1);
+    padding: 10px;
+
+  }
+}

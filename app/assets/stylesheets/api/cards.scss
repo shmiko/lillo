@@ -1,0 +1,130 @@
+// Place all the styles related to the api/cards controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.cards {
+	padding: 0;
+	list-style-type: none;
+	min-height: 5px;
+}
+
+.card {
+	background: rgba(255, 255, 255, 1);
+	padding: 0px 10px;
+	border-radius: 5px;
+	margin: 5px 0px;
+	min-height: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+	width: 100%;
+}
+
+.card:hover {
+	background: rgba(192, 192, 192, 0.4);
+}
+
+.card-title {
+	font-size: 14px;
+	color: black;
+}
+
+.card-link:hover {
+	text-decoration: none;
+}
+
+.delete-card-button {
+	display: none;
+	position: absolute;
+	background: rgba(0, 0, 0, 0);
+	border: none;
+	right: 0;
+	top: 0;
+}
+
+.card:hover .delete-card-button {
+	display: inline-block;
+}
+
+.card-title-link, .card-description-link {
+	margin-top: 15px;
+	display: block;
+	width: 100%;
+	font-size: 18px;
+	color: black;
+	font-weight: bold;
+}
+
+.card-description-link {
+	font-size: 14px;
+	font-weight: normal;
+	margin-left: 10px;
+	color: rgba(150, 150, 150, 1);
+}
+
+.hide {
+	display: none;
+}
+
+.card-title-input, .card-description-input {
+	display: none;
+    background: rgba(237, 239, 240, 1);
+    font-weight: bold;
+	width: 98.5%;
+	margin-top: 10px;
+	font-size: 18px;
+}
+
+.card-description-input {
+	font-size: 14px;
+	font-weight: normal;
+	margin-left: 10px;
+}
+
+.show {
+	display: block;
+}
+
+.card-title-save-button.btn.btn-default, .card-description-save-button.btn.btn-default {
+	display: none;
+	background: rgba(87, 166, 65, 1);
+	border: none;
+	color: white;
+	font-weight: bold;
+	margin-top: 15px;
+}
+
+.card-description-save-button.btn.btn-default {
+	margin-left: 8px;
+}
+
+.activity-title {
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+.comment-textarea {
+	resize: none;
+	width: 97%;
+	margin: 0px;
+	margin-left: 10px;
+	border: none;
+	border-radius: 4px;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+	padding-left: 10px;
+	padding-top: 5px;
+}
+
+.comment-form {
+	margin: 10px 0px;
+}
+
+.comment-submit-button.btn.btn-default {
+	margin: 10px 0px;
+	margin-left: 10px;
+	background: rgba(87, 166, 65, 1);
+	border: none;
+	color: white;
+	font-weight: bold;
+}

@@ -1,0 +1,13 @@
+<div class="list-title">
+	<strong><%= list.escape('title') %></strong>
+	<button class="delete-list-button" type="submit" name="button" data-id=<%= list.id %>>X</button>
+</div>
+<ul class="cards"></ul>
+<a href="" class="add-card-link">Add a card...</a>
+<div>
+	<form class="new-card-form">
+		<textarea class="add-card-input" name="card[title]" placeholder=""></textarea>
+		<br>
+		<button type="submit" class="new-card-button">Add</button>
+	</form>
+</div>

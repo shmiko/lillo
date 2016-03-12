@@ -1,0 +1,84 @@
+// Place all the styles related to the api/boards controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.board {
+	display: table;
+}
+
+.board-container {
+	display: flex;
+}
+
+.board-title {
+	color: white;
+	margin: 0px 10px 20px 10px;
+}
+
+.board-index-title {
+	padding: 0px 10px;
+	color: white;
+}
+
+.board-index-item {
+	display: inline-block;
+	width: 300px;
+	height: 100px;
+	background: rgba(0, 0, 0, 0.3);
+	margin: 10px;
+	font-weight: bold;
+	position: relative;
+	border-radius: 3px;
+}
+
+.board-index-item-link {
+	padding: 5px 10px;
+	font-size: 16px;
+	color: white;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.delete-board-button {
+	display: none;
+	position: absolute;
+	background: rgba(0, 0, 0, 0);
+	border: none;
+	top: 0;
+	right: 0;
+}
+
+.board-index-item:hover .delete-board-button {
+	display: block;
+}
+
+.item-link-box {
+	height: 100px;
+	width: 300px;
+}
+
+.new-board-link {
+	/*padding: 5px 10px;*/
+	font-size: 16px;
+	margin: 10px;
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.new-board-link:hover {
+}
+
+.add-board-container {
+	height: 100px;
+	width: 300px;
+	background-color: rgba(0, 0, 0, 0.3);
+	border-radius: 2px;
+}
+
+.add-board-text {
+	display: inline-block;
+	margin: 5px 10px;
+}
