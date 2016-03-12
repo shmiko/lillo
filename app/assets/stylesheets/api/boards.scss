@@ -59,7 +59,12 @@
 	color: red;
 }
 
-.add-board-text:hover .add-board-container{
+.add-board-text:hover{
+	display: block;
+	color: red;
+}
+
+.add-board-container:hover{
 	display: block;
 	color: red;
 }
